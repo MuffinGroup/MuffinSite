@@ -1,6 +1,9 @@
 var button = document.getElementById("button1");
 
 button.addEventListener("click", function() {
-  // Define the action to perform when the button is clicked
-  alert("Button clicked!");
+  changeTitle(Math.floor(Math.random() * (100 - 1 + 1)) + 1)
 });
+
+function changeTitle(title) {
+  document.title = title;
+}
