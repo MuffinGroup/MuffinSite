@@ -12,3 +12,15 @@ function changeTitle(title) {
 function openSite(link) {
   window.open(link,  "_blank")
 }
+
+const toggle = document.getElementById('myToggle');
+
+toggle.addEventListener('change', function() {
+  if (this.checked) {
+    // Toggle is on
+    console.log('Toggle is on');
+  } else {
+    // Toggle is off
+    console.log('Toggle is off');
+  }
+});
