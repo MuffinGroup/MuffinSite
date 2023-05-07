@@ -25,3 +25,8 @@ document.addEventListener('mousemove', function(event) {
   followingImage.style.left = mouseX + 'px';
   followingImage.style.top = mouseY + 'px';
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.documentElement.classList.add('hide-cursor');
+});

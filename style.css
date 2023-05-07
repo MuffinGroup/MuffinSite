@@ -19,15 +19,24 @@
   left: 100;
 }
 
+.text {
+  position: relative;
+  top: 800;
+}
+
 body {
   background-color: #6a99c0;
 }
 
-container {
+.container {
   position: relative;
 }
 
 #following-image {
   position: absolute;
   pointer-events: none; /* Ensures the image doesn't interfere with mouse interactions */
+}
+
+.hide-cursor {
+  cursor: none;
 }
