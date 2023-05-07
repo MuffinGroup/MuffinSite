@@ -5,16 +5,25 @@
 .icon {
   width: 80px;
   height: 80px;
+  border-radius: 50%;
 }
 
 .name {
-  font-size: 100;
+  position: relative;
+  font-size: 60px;
   font-family:Arial, Helvetica, sans-serif;
   letter-spacing: 0px;
   font-weight: bold;
   vertical-align: top;
+  top: -130;
+  left: 100;
 }
 
 body {
   background-color: #6a99c0;
+}
+
+#follow {
+  position: absolute;
+  text-align: center;
 }

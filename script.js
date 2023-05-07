@@ -12,3 +12,10 @@ function changeTitle(title) {
 function openSite(link) {
   window.open(link,  "_blank")
 }
+
+$(document).mousemove(function(e) {
+  $("#follow").css({
+    left: e.pageX,
+    top: e.pageY
+  });
+});
