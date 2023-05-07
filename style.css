@@ -23,7 +23,11 @@ body {
   background-color: #6a99c0;
 }
 
-#follow {
+container {
+  position: relative;
+}
+
+#following-image {
   position: absolute;
-  text-align: center;
+  pointer-events: none; /* Ensures the image doesn't interfere with mouse interactions */
 }
