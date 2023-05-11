@@ -36,7 +36,3 @@ body {
   position: absolute;
   pointer-events: none; /* Ensures the image doesn't interfere with mouse interactions */
 }
-
-.hide-cursor {
-  cursor: none;
-}
