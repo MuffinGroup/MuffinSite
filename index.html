@@ -1,4 +1,4 @@
-<html>
+<html lang="en_us">
     <!-- the css styles -->
     <link rel="stylesheet" href="style.css">
 
@@ -8,23 +8,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="The site for the muffin group">
         <meta name="keywords" content="muffin group, yet-to-be-named-game, muffin site">
-        <link rel="icon" href="icon.png" type="image/x-icon">
-        <title>Muffin Group Site</title>  
+        <link rel="icon" href="/assets/icon.png" type="image/x-icon">
+        <title>Muffin Group Site</title>
     </head>
     <body>
-        <!-- the name -->
-        <div>
-            <div class="box"></div>
-            <img src="icon.png" alt="" class="icon">
-            <p class="name">MuffinGroup</p>
+        <!-- the header -->
+        <header class="header">
+            <img src="/assets/icon.png" alt="missing MuffinGroup icon" class="icon">
+            <p class="headerTitle">MuffinGroup</p>
+            <div class="headerBox"></div>
+            <div class="mediaLinks">
+                <button class="githubButton">
+                    <img src="assets/github.svg" alt="missing github icon">
+                </button>
+                <button class="discordButton">
+                    <img src="assets/discord.svg" alt="missing github icon">
+                </button>
+                <button class="youtubeButton">
+                    <img src="assets/youtube.svg" alt="missing github icon">
+                </button>
+            </div>
+        </header>
+        <div class="footer">
+            <div class="footerBox"></div>
+            <p class="footerTitle">MIT License | ©muffingroup</p>
         </div>
         <!-- the main content -->
-        <h1 class="text">Hello There!</h1>
-        <a href="https://github.com/MuffinGroup/yet-to-be-named-game" class="sign">Yet-To-Be-Named-Game</a>
-        <button id="button1" class="button1">Click me</button>
-        <!-- image that follows the mouse cursor -->
-        <div class="container">
-            <img src="muffin_icon.png" alt="Following Image" id="following-image">
+        <div class="main">
+            <h1 class="text">Hello There!</h1>
+            <a href="https://github.com/MuffinGroup/yet-to-be-named-game" class="sign">Yet-To-Be-Named-Game</a>
+            <button id="button1" class="button1">Click me</button>
         </div>
     </body>
 </html>
