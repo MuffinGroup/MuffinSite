@@ -61,46 +61,66 @@
   cursor: pointer; /* Displays a hand cursor */
 }
 
-.githubButton {
-  position: relative;
+.githubButton:hover {
+  cursor: pointer;
+  position: fixed;
   background: none;
   border: none;
   padding: 0;
+  top: 10;
+  left: 500;
+  z-index: 1000;
 }
 
 .githubButton img {
-  position: relative;
-  width: 80px; /* Adjust the width and height as needed */
+  position: fixed;
+  width: 80px;
   height: 80px;
-  top: 800;
+  top: 10;
+  left: 500;
+  z-index: 1000;
 }
 
-.discordButton {
-  position: relative;
+.discordButton:hover {
+  cursor: pointer;
+  position: fixed;
   background: none;
   border: none;
   padding: 0;
+  top: 10;
+  left: 600;
+  z-index: 1000;
 }
 
 .discordButton img {
-  position: relative;
-  width: 80px; /* Adjust the width and height as needed */
+  position: fixed;
+  width: 80px;
   height: 80px;
   top: 800;
+  top: 10;
+  left: 600;
+  z-index: 1000;
 }
 
-.youtubeButton {
-  position: relative;
+.youtubeButton:hover {
+  cursor: pointer;
+  position: fixed;
   background: none;
   border: none;
   padding: 0;
+  top: 10;
+  left: 700;
+  z-index: 1000;
 }
 
 .youtubeButton img {
-  position: relative;
-  width: 80px; /* Adjust the width and height as needed */
+  position: fixed;
+  width: 80px;
   height: 80px;
   top: 800;
+  top: 10;
+  left: 700;
+  z-index: 1000;
 }
 
 body {
