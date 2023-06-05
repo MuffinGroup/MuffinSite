@@ -80,6 +80,7 @@ body {
 .h3 {
     text-align: center;
     font-size: 40px;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .projectbutton {
@@ -91,6 +92,7 @@ body {
     color: white;
     background-color: rgb(204, 0, 204);
     border-radius: 8px;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.8);
 }
 
 .projectbutton:hover {
