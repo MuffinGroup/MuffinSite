@@ -3,6 +3,9 @@ var ytButton = document.getElementById("youtubeButton");
 var dcButton = document.getElementById("discordButton");
 var ghButton = document.getElementById("githubButton");
 var defaultTitle = "Muffin Group"
+let op = 0
+const opr = 0
+var test = 0
 
 button.addEventListener("click", function() {
   changeTitle(Math.floor(Math.random() * (100 - 1 + 1)) + 1)
@@ -27,4 +30,9 @@ function changeTitle(title) {
 
 function openSite(link) {
   window.open(link,  "_blank")
+}
+
+function scrollToSection() {
+    var section = document.getElementById("mySection")
+    section.scrollIntoView({ behavior: "smooth" })
 }
