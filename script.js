@@ -1,0 +1,30 @@
+var button = document.getElementById("button1");
+var ytButton = document.getElementById("youtubeButton");
+var dcButton = document.getElementById("discordButton");
+var ghButton = document.getElementById("githubButton");
+var defaultTitle = "Muffin Group"
+
+button.addEventListener("click", function() {
+  changeTitle(Math.floor(Math.random() * (100 - 1 + 1)) + 1)
+  openSite("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+});
+
+ghButton.addEventListener("click", function() {
+  openSite("https://github.com/MuffinGroup")
+});
+
+ytButton.addEventListener("click", function() {
+  openSite("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+});
+
+dcButton.addEventListener("click", function() {
+  openSite("https://discord.gg/XGvWxtgaaB")
+});
+
+function changeTitle(title) {
+  document.title = title;
+}
+
+function openSite(link) {
+  window.open(link,  "_blank")
+}
