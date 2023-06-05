@@ -1,129 +1,106 @@
-.button1{
-  font-size: large;
-}
-
-.icon {
-  position: fixed;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  z-index: 1000;
-}
-
-.headerTitle {
-  position: fixed;
-  font-size: 60px;
-  font-family:Arial, Helvetica, sans-serif;
-  letter-spacing: 0px;
-  font-weight: bold;
-  vertical-align: top;
-  top: -40;
-  left: 100;
-  z-index: 1000;
-  color: #1d2933;
-}
-
-.footerTitle {
-  position: relative;
-  font-size: 20px;
-}
-
-.text {
-  position: relative;
-  top: -800;
-}
-
-.headerBox {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100px;
-  border-radius: 10px;
-  background-color: #537b9b;
-  z-index: 999;
-}
-
-.footerBox {
-  position: relative;
-  left: -8;
-  right: 0;
-  top: -277;
-  width: 100.9%;
-  height: 100px;
-  border-radius: 10px;
-  background-color: #537b9b;
-  z-index: -1;
-}
-
-.custom-cursor {
-  cursor: pointer; /* Displays a hand cursor */
-}
-
-.githubButton:hover {
-  cursor: pointer;
-  position: fixed;
-  background: none;
-  border: none;
-  padding: 0;
-  top: 10;
-  left: 1800;
-  z-index: 1000;
-}
-
-.githubButton img {
-  position: fixed;
-  width: 80px;
-  height: 80px;
-  top: 10;
-  left: 1800;
-  z-index: 1000;
-}
-
-.discordButton:hover {
-  cursor: pointer;
-  position: fixed;
-  background: none;
-  border: none;
-  padding: 0;
-  top: 10;
-  left: 1700;
-  z-index: 1000;
-}
-
-.discordButton img {
-  position: fixed;
-  width: 80px;
-  height: 80px;
-  top: 800;
-  top: 10;
-  left: 1700;
-  z-index: 1000;
-}
-
-.youtubeButton:hover {
-  cursor: pointer;
-  position: fixed;
-  background: none;
-  border: none;
-  padding: 0;
-  top: 10;
-  left: 1600;
-  z-index: 1000;
-}
-
-.youtubeButton img {
-  position: fixed;
-  width: 80px;
-  height: 80px;
-  top: 800;
-  top: 10;
-  left: 1600;
-  z-index: 1000;
-}
-
 body {
-  background-color: #6a99c0;
-  overflow-x: hidden;
+    margin: 0;
+    font-family: 'Russo One', sans-serif;
+}
+
+.background {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.container {
+    position: absolute;
+    right: 32px;
+    left: 40px;
+    top: 30px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.link:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.logo {
+    scale: 2;
+}
+
+.headline {
+    position: absolute;
+    left: 50px;
+    top: 300px;
+    color: rgb(204, 0, 204);
+    font-size: 50px;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.headline2 {
+    position: absolute;
+    left: 50px;
+    top: 360px;
+    color: white;
+    font-size: 40px;
+    width: 500px;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.button {
+    background-color: rgb(204, 0, 204);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.map {
+    height: 300px;
+    padding: 30px 100px;
+    display: flex;
+    gap: 50px;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.text-map {
+    font-size: 30px;
+}
+
+.h3 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.projectbutton {
+    display: list-item;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(204, 0, 204);
+    border-radius: 8px;
+}
+
+.protexts {
+    width: 100%;
+    font-size: 30px;
+}
+
+.projects {
+    height: 300px;
+    padding: 30px 100px;
+    gap: 50px;
+    display: flex;
 }
