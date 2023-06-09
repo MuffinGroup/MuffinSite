@@ -2,6 +2,7 @@ var button = document.getElementById("button1");
 var ytButton = document.getElementById("youtubeButton");
 var dcButton = document.getElementById("discordButton");
 var ghButton = document.getElementById("githubButton");
+var contactButton = document.getElementById("contactButton");
 var defaultTitle = "Muffin Group"
 let op = 0
 const opr = 0
@@ -24,6 +25,11 @@ dcButton.addEventListener("click", function() {
   openSite("https://discord.gg/XGvWxtgaaB")
 });
 
+contactButton.addEventListener("click", function() {
+  scrollToSection()
+  console.log("uuw")
+})
+
 function changeTitle(title) {
   document.title = title;
 }
@@ -33,6 +39,6 @@ function openSite(link) {
 }
 
 function scrollToSection() {
-    var section = document.getElementById("mySection")
+    var section = document.getElementById("contact")
     section.scrollIntoView({ behavior: "smooth" })
 }
