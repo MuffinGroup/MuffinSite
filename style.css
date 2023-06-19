@@ -56,6 +56,12 @@ body {
     text-shadow: 5px 5px rgba(0, 0, 0, 0.8);
 }
 
+.contact_note {
+    font-size: 60px;
+    color: rgb(204, 0, 204);
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.8);
+}
+
 .button {
     background-color: rgb(204, 0, 204);
     padding: 8px;
@@ -107,6 +113,37 @@ body {
     border-radius: 8px;
     text-shadow: 5px 5px rgba(0, 0, 0, 0.8);
 }
+
+.buttons {
+  position: relative;
+}
+
+.ytbng_git_button {
+    position: relative;
+    height: 90px;
+    width: 400px;
+    gap: 50px;
+    object-fit: cover;
+    border-radius: 30;
+}
+
+.muffin_site_git_button {
+    position: relative;
+    height: 90px;
+    width: 400px;
+    gap: 50px;
+    object-fit: cover;
+    border-radius: 30;
+}
+
+.muffin_clicker_git_button {
+    position: relative;
+    height: 90px;
+    width: 400px;
+    gap: 50px;
+    object-fit: cover;
+    border-radius: 30;
+  }
 
 .protexts {
     width: 100%;
