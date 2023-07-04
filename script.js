@@ -1,17 +1,12 @@
-var button = document.getElementById("button1");
 var ytButton = document.getElementById("youtubeButton");
 var dcButton = document.getElementById("discordButton");
 var ghButton = document.getElementById("githubButton");
 var contactButton = document.getElementById("contactButton");
 var defaultTitle = "Muffin Group"
-let op = 0
-const opr = 0
-var test = 0
 
-button.addEventListener("click", function() {
-  changeTitle(Math.floor(Math.random() * (100 - 1 + 1)) + 1)
-  openSite("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-});
+var ytbng_git = document.getElementById("ytbng_git");
+var muffin_site_git = document.getElementById("ms_git");
+var factorization_git = document.getElementById("fac_git");
 
 ghButton.addEventListener("click", function() {
   openSite("https://github.com/MuffinGroup")
@@ -29,6 +24,17 @@ contactButton.addEventListener("click", function() {
   scrollToSection()
   console.log("uuw")
 })
+
+ytbng_git.addEventListener("click", function() {
+  openSite("https://github.com/MuffinGroup/yet-to-be-named-game")
+})
+
+const button = document.getElementById('ytbng_git');
+
+button.addEventListener('click', function() {
+  console.log('Button clicked!');
+  openSite("https://github.com/MuffinGroup/yet-to-be-named-game")
+});
 
 function changeTitle(title) {
   document.title = title;
