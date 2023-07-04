@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Russo One", sans-serif;
@@ -155,6 +159,15 @@ body {
   padding: 30px 100px;
   gap: 50px;
   display: flex;
+}
+
+.contact {
+    height: 500px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
 }
 
 #ytbng_git {

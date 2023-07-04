@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Scroll to Section Example</title>
   <style>
-    body {
-      height: 2000px; /* Adding extra height for demonstration purposes uwu */
+    html {
+      scroll-behavior: smooth;
     }
-    
+
     section {
-      margin: 200px 0;
-      padding: 20px;
-      border: 1px solid #ccc;
-      background-color: #f9f9f9;
+      height: 500px;
+      background-color: #f2f2f2;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
     }
-    
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 10px;
     }
   </style>
-  <script></script>
 </head>
 <body>
-  <h1>Scroll to Section Example</h1>
-  
-  <button onclick="scrollToSection()">Scroll to Section</button>
-  
-  <section id="mySection">
-    <h2>Section Title</h2>
-    <p>This is the content of the section.</p>
+  <nav>
+    <a href="#section1">Section 1</a>
+    <a href="#section2">Section 2</a>
+  </nav>
+
+  <section id="section1">
+    <h2>Section 1</h2>
+    <p>This is the content of section 1.</p>
   </section>
-  
-  <!-- Adding extra sections for demonstration purposes -->
-  <section>
+
+  <section id="section2">
     <h2>Section 2</h2>
-    <p>This is another section.</p>
-  </section>
-  
-  <section>
-    <h2>Section 3</h2>
-    <p>Yet another section on the page.</p>
+    <p>This is the content of section 2.</p>
   </section>
 </body>
 </html>

@@ -1,12 +1,13 @@
 var ytButton = document.getElementById("youtubeButton");
 var dcButton = document.getElementById("discordButton");
 var ghButton = document.getElementById("githubButton");
-var contactButton = document.getElementById("contactButton");
 var defaultTitle = "Muffin Group"
 
 var ytbng_git = document.getElementById("ytbng_git");
 var muffin_site_git = document.getElementById("ms_git");
 var factorization_git = document.getElementById("fac_git");
+
+var contactButton = document.getElementById("link_button")
 
 ghButton.addEventListener("click", function() {
   openSite("https://github.com/MuffinGroup")
@@ -21,8 +22,8 @@ dcButton.addEventListener("click", function() {
 });
 
 contactButton.addEventListener("click", function() {
-  scrollToSection()
-  console.log("uuw")
+  scrollToSection(document.getElementById("contact"))
+  openSite("https://github.com/MuffinGroup/yet-to-be-named-game")
 })
 
 ytbng_git.addEventListener("click", function() {
