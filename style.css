@@ -38,7 +38,9 @@ body {
 }
 
 .logo {
-  scale: 0.4;
+  position: relative;
+  scale: 0.3;
+  left: -170px;
 }
 
 .headline {
