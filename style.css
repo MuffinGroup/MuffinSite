@@ -18,7 +18,7 @@ body {
   position: absolute;
   right: 32px;
   left: 40px;
-  top: 30px;
+  top: -150px;
   font-size: 24px;
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@ body {
 }
 
 .logo {
-  scale: 2;
+  scale: 0.4;
 }
 
 .headline {
