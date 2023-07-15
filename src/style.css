@@ -18,6 +18,8 @@ body {
   width: 100%;
   object-fit: cover;
   filter: brightness(0.5);
+  pointer-events: none;
+  user-select: none;
 }
 
 .container {
@@ -47,6 +49,17 @@ body {
   position: relative;
   scale: 0.3;
   left: -170px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.logo-button:hover {
+  cursor: pointer;
+}
+
+.logo-button {
+  width: 150px;
+  height: 150px;
 }
 
 .headline {
@@ -100,6 +113,16 @@ body {
   text-align: center;
   font-size: 40px;
   text-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.map a {
+  color: rgb(0, 110, 255);
+  text-decoration: none;
+}
+
+.protexts a {
+  color: rgb(0, 110, 255);
+  text-decoration: none;
 }
 
 .projectbutton {
