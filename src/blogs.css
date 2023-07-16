@@ -1,0 +1,67 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Russo One", sans-serif;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.background {
+  height: 500vh;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+  pointer-events: none;
+  user-select: none;
+}
+
+.head {
+  position: absolute;
+  right: 32px;
+  left: 40px;
+  top: -150px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  position: relative;
+  scale: 0.3;
+  left: -170px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.logo-button:hover {
+  cursor: pointer;
+}
+
+.logo-button {
+  width: 150px;
+  height: 150px;
+}
+
+.blog {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  width: 70%;
+  height: 150%;
+  background-color: rgba(255, 255, 255, 0.404);
+  border-radius: 10%;
+}
+
+.blog p {
+    position: absolute;
+    font-size: 250%;
+    left: 5%;
+}

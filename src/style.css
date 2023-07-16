@@ -22,7 +22,7 @@ body {
   user-select: none;
 }
 
-.container {
+.head {
   position: absolute;
   right: 32px;
   left: 40px;
