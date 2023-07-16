@@ -59,9 +59,43 @@ body {
   background-color: rgba(255, 255, 255, 0.404);
   border-radius: 10%;
 }
+.blog-content {
+  position: absolute;
+  left: 10%;
+}
 
-.blog p {
-    position: absolute;
-    font-size: 250%;
-    left: 5%;
+.blog h1 {
+  font-size: 500%;
+  color: rgb(14, 48, 121);
+}
+
+.blog h1 a {
+  font-size: 50%;
+  color: rgb(51, 85, 158);
+}
+
+.blog h1 span {
+  font-size: 50%;
+  color: rgb(51, 85, 158);
+}
+
+.profile-picture {
+  position: absolute;
+  scale: 25%;
+  border-radius: 50%;
+  top: -65%;
+  left: 85%;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+}
+
+.profile-picture {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.profile-picture:hover {
+  cursor: pointer;
 }
