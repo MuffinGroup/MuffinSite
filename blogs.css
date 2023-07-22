@@ -55,17 +55,31 @@ body {
   top: 10%;
   left: 15%;
   width: 70%;
-  height: 150%;
+  height: 350%;
   background-color: rgba(255, 255, 255, 0.404);
   border-radius: 10%;
 }
+
+.blog-container-1 {
+  position: absolute;
+  top: 2%;
+  left: 15%;
+  width: 70%;
+  height: 40%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10%;
+}
+
 .blog-content {
   position: absolute;
   left: 10%;
 }
 
 .blog h1 {
-  font-size: 500%;
+  font-size: 350%;
+}
+
+.headline {
   color: rgb(14, 48, 121);
 }
 
@@ -83,8 +97,8 @@ body {
   position: absolute;
   scale: 25%;
   border-radius: 50%;
-  top: -65%;
-  left: 85%;
+  top: -30%;
+  left: 76%;
 }
 
 .profile-picture img {
@@ -94,8 +108,18 @@ body {
 .profile-picture {
   background-color: rgba(0, 0, 0, 0);
   border: none;
+  color: rgba(0, 86, 216, 0.842);
 }
 
 .profile-picture:hover {
   cursor: pointer;
+}
+
+.html-output h1 {
+  font-size: 200%;
+}
+
+.html-output p {
+  font-size: 100%;
+  color: black;
 }

@@ -49,3 +49,26 @@ function scrollToSection() {
   var section = document.getElementById("contact");
   section.scrollIntoView({ behavior: "smooth" });
 }
+
+// Function to convert Markdown to HTML
+function convertMarkdownToHTML(markdown) {
+  var converter = new showdown.Converter();
+  return converter.makeHtml(markdown);
+}
+
+// Function to load and convert the Markdown file
+function loadAndConvertMarkdownFile() {
+  var filePath = "../posts/nexus-announcement.md"; // Set the file path here
+  var xhr = new XMLHttpRequest();
+
+  xhr.onload = function () {
+    if (xhr.status === 200) {
+      var markdownContent = xhr.responseText;
+      var htmlOutput = convertMarkdownToHTML(markdownContent);
+      document.getElementById("html-output").innerHTML = htmlOutput;
+    }
+  };
+
+  xhr.open("GET", filePath, true);
+  xhr.send();
+}

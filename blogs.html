@@ -3,11 +3,13 @@
   <link rel="stylesheet" href="blogs.css" />
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" href="assets/icon.png" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    <script src="script.js"></script>
     <title>Muffin Group - Blogs</title>
   </head>
-  <body>
+  <body onload="loadAndConvertMarkdownFile()">
     <div class="page-container">
       <img class="background" src="assets/background.jpg" />
       <div class="head">
@@ -20,25 +22,27 @@
       </div>
       <div class="content">
         <div class="blog">
-          <div class="blog-content">
-            <div class="headline">
-              <h1>
-                Anouncing Nexus <span>by</span>
-                <a href="https://github.com/Thepigcat76">thepigcat</a>
-              </h1>
-              <button
-                class="profile-picture"
-                id="profile-button"
-                onclick="window.location.href = 'https://github.com/Thepigcat76'"
-              >
-                <img
-                  src="https://avatars.githubusercontent.com/u/93595333?v=4"
-                  alt="Failed to load profile picture"
-                />
-              </button>
-            </div>
-            <div class="blog-container">
-              
+          <div class="blog-container-1">
+            <div class="blog-content">
+              <div class="headline">
+                <h1 class="headline">
+                  Anouncing Nexus <span>by</span>
+                  <a href="https://github.com/Thepigcat76">thepigcat</a>
+                </h1>
+                <button
+                  class="profile-picture"
+                  id="profile-button"
+                  onclick="window.location.href = 'https://github.com/Thepigcat76'"
+                >
+                  <img
+                    src="https://avatars.githubusercontent.com/u/93595333?v=4"
+                    alt="Failed to load profile picture"
+                  />
+                </button>
+              </div>
+              <div class="text-container">
+                <p id="html-output" class="html-output"/>
+              </div>
             </div>
           </div>
         </div>
