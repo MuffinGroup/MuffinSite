@@ -58,7 +58,7 @@ function convertMarkdownToHTML(markdown) {
 
 // Function to load and convert the Markdown file
 function loadAndConvertMarkdownFile() {
-  var filePath = "../posts/nexus-announcement.md"; // Set the file path here
+  var filePath = "posts/nexus-announcement.md"; // Set the file path here
   var xhr = new XMLHttpRequest();
 
   xhr.onload = function () {
