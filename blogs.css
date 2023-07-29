@@ -65,7 +65,7 @@ body {
   top: 2%;
   left: 15%;
   width: 70%;
-  height: 20%;
+  height: 25%;
   background-color: rgb(255, 255, 255);
   border-radius: 10%;
 }
@@ -97,7 +97,7 @@ body {
   position: absolute;
   scale: 25%;
   border-radius: 50%;
-  top: -30%;
+  top: -25%;
   left: 76%;
 }
 
@@ -120,6 +120,6 @@ body {
 }
 
 .html-output p {
-  font-size: 100%;
+  font-size: 150%;
   color: black;
 }
