@@ -4,9 +4,9 @@
 
 ## Nexus will be a simple and modern scripting language for
 
-## building plugins and extensions for building <a href="https://www.rust-lang.org/" style="text-decoration: none; color: rgba(0, 86, 216, 0.842);">rust</a> programs
+## building plugins and extensions for <a href="https://www.rust-lang.org/" style="text-decoration: none; color: rgba(0, 86, 216, 0.842);">rust</a> programs
 
-## 
+## <a href="https://www.rust-lang.org/" style="text-decoration: none; color: rgba(0, 86, 216, 0.842);">Read more ...</a>
 
 <img
     style="display: block;
