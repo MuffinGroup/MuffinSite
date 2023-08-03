@@ -13,6 +13,6 @@ building plugins and extensions for <a href="https://www.rust-lang.org/" style="
            margin-left: auto;
            margin-right: auto;
            width: 30%;"
-    src="../assets/icon.png"
+    src="assets/icon.png"
     alt="Our logo">
 </img>
