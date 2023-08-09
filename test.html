@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header class="sticky-header">
+      <nav class="navbar">
+        <div class="navdiv">
+          <div class="logo"><a href="#">Mufffin Group</a></div>
+          <ul>
+            <li class="navitem"><a href="#">Home</a></li>
+            <li class="navitem"><a href="#">About</a></li>
+            <li class="navitem">
+              <a href="https://github.com/MuffinGroup">Github</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <p class="test-class">Amogus</p>
+    </main>
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    font-family: calibri;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(220, 20, 60); /* Initial background color (non-transparent) */
+    padding: 10px;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Transition effect for smooth color change */
+  }
+
+  .sticky-header.transparent {
+    background-color: rgba(220, 20, 60, 0.5); /* Background color with transparency */
+  }
+  .test-class {
+    position: relative;
+    color: brown;
+    top: 1000px;
+  }
+</style>
+<script>
+  window.addEventListener("scroll", function () {
+    var header = document.querySelector(".sticky-header");
+    if (window.scrollY > 0) {
+      header.classList.add("transparent");
+    } else {
+      header.classList.remove("transparent");
+    }
+  });
+</script>
