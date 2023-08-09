@@ -51,6 +51,8 @@ body {
   left: -170px;
   pointer-events: none;
   user-select: none;
+  position: relative;
+  top: 50px;
 }
 
 .logo-button:hover {
@@ -60,6 +62,8 @@ body {
 .logo-button {
   width: 150px;
   height: 150px;
+  position: relative;
+  top: 50px;
 }
 
 .headline {
@@ -275,4 +279,37 @@ body {
 #nex_git img {
   width: 100%;
   height: auto;
+}
+
+.navbar {
+  background-color: crimson;
+  font-family: calibri;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.navitem {
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+}
+.navitem a {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 25px;
+  text-decoration: none;
 }
