@@ -36,6 +36,7 @@ function convertMarkdownToHTML(markdown) {
 
 // Function to load and convert the Markdown file
 function loadAndConvertMarkdownFile() {
+  console.log("conversion");
   var filePath = "posts/nexus-announcement.md"; // Set the file path here
   var xhr = new XMLHttpRequest();
 
@@ -51,10 +52,13 @@ function loadAndConvertMarkdownFile() {
   xhr.send();
 }
 
+console.log("init");
 window.addEventListener("scroll", function () {
   var header = document.querySelector(".sticky-header");
+  console.log("scroll");
   if (window.scrollY > 150) {
     header.classList.add("transparent");
+    console.log("scroll2");
   } else {
     header.classList.remove("transparent");
   }
