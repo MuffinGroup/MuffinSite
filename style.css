@@ -20,6 +20,7 @@ body {
   filter: brightness(0.5);
   pointer-events: none;
   user-select: none;
+  opacity: 0.65;
 }
 
 .head {
@@ -47,12 +48,12 @@ body {
 
 .logo {
   position: relative;
-  scale: 0.3;
-  left: -450px;
+  scale: 1.2;
+  left: 600px;
   pointer-events: none;
   user-select: none;
   position: relative;
-  top: -295px;
+  top: 350px;
 }
 
 .logo-button:hover {
