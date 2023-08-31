@@ -48,11 +48,11 @@ body {
 .logo {
   position: relative;
   scale: 0.3;
-  left: -175px;
+  left: -450px;
   pointer-events: none;
   user-select: none;
   position: relative;
-  top: -180px;
+  top: -295px;
 }
 
 .logo-button:hover {
