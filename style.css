@@ -331,3 +331,14 @@ body {
   margin-right: 25px;
   text-decoration: none;
 }
+
+.top {
+  padding-top: 100px;
+}
+
+.member_git_button {
+  border-radius: 30px;
+  position: relative;
+  gap: 50px;
+  object-fit: cover;
+}

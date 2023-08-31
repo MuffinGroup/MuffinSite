@@ -55,10 +55,8 @@ function loadAndConvertMarkdownFile() {
 console.log("init");
 window.addEventListener("scroll", function () {
   var header = document.querySelector(".sticky-header");
-  console.log("scroll");
   if (window.scrollY > 150) {
     header.classList.add("transparent");
-    console.log("scroll2");
   } else {
     header.classList.remove("transparent");
   }
