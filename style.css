@@ -341,4 +341,6 @@ body {
   position: relative;
   gap: 50px;
   object-fit: cover;
+  height: 465px;
+  width: 400px;
 }
