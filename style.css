@@ -157,10 +157,6 @@ body {
   text-shadow: 5px 5px rgba(0, 0, 0, 0.8);
 }
 
-.buttons {
-  position: relative;
-}
-
 .ytbng_git_button {
   position: relative;
   height: 90px;
@@ -343,4 +339,11 @@ body {
   object-fit: cover;
   height: 465px;
   width: 400px;
+}
+
+.about-buttons button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
