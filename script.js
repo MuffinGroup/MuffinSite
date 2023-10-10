@@ -40,7 +40,7 @@ function loadAndConvertMarkdownFile() {
   var filePath = "posts/nexus-announcement.md"; // Set the file path here
   var xhr = new XMLHttpRequest();
 
-  xhr.onload = function () {
+  xhr.onload = () => {
     if (xhr.status === 200) {
       var markdownContent = xhr.responseText;
       var htmlOutput = convertMarkdownToHTML(markdownContent);
