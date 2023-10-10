@@ -341,6 +341,10 @@ body {
   width: 400px;
 }
 
+.member_git_button:hover {
+  cursor: pointer;
+}
+
 .about-buttons button {
   position: relative;
   background-color: transparent;
