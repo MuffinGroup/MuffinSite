@@ -1,8 +1,8 @@
-var defaultTitle = "Muffin Group";
+const defaultTitle = "Muffin Group";
 
-var ytbng_git = document.getElementById("ytbng_git");
-var muffin_site_git = document.getElementById("ms_git");
-var factorization_git = document.getElementById("fac_git");
+const ytbng_git = document.getElementById("ytbng_git");
+const muffin_site_git = document.getElementById("ms_git");
+const factorization_git = document.getElementById("fac_git");
 
 ytbng_git.addEventListener("click", function () {
   openSite("https://github.com/MuffinGroup/yet-to-be-named-game");
