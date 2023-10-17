@@ -3,13 +3,26 @@
   <link rel="stylesheet" href="blogs.css" />
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/icon.png" type="image/x-icon" />
     <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
-    <script src="script.js"></script>
     <title>Muffin Group - Blogs</title>
   </head>
   <body onload="loadAndConvertMarkdownFile()">
+    <div class="sticky-header">
+      <nav class="navbar">
+        <div class="navdiv">
+          <div class="navlogo"><a href="#">Mufffin Group</a></div>
+          <ul>
+            <li class="navitem"><a href="#">Home</a></li>
+            <li class="navitem"><a href="#">About</a></li>
+            <li class="navitem">
+              <a href="https://github.com/MuffinGroup">Github</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <div class="page-container">
       <img class="background" src="assets/background.jpg" />
       <div class="head">
@@ -41,7 +54,7 @@
                 </button>
               </div>
               <div class="text-container">
-                <p id="html-output" class="html-output"/>
+                <p id="html-output" class="html-output" />
               </div>
             </div>
           </div>
@@ -50,3 +63,15 @@
     </div>
   </body>
 </html>
+<script src="script.js"></script>
+
+<script>
+  window.addEventListener("scroll", function () {
+  var header = document.querySelector(".sticky-header");
+  if (window.scrollY > 150) {
+    header.classList.add("transparent");
+  } else {
+    header.classList.remove("transparent");
+  }
+});
+</script>

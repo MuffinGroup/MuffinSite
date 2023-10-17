@@ -1,30 +1,8 @@
-var ytButton = document.getElementById("youtubeButton");
-var dcButton = document.getElementById("discordButton");
-var ghButton = document.getElementById("githubButton");
-var defaultTitle = "Muffin Group";
+const defaultTitle = "Muffin Group";
 
-var ytbng_git = document.getElementById("ytbng_git");
-var muffin_site_git = document.getElementById("ms_git");
-var factorization_git = document.getElementById("fac_git");
-
-var contactButton = document.getElementById("link_button");
-
-ghButton.addEventListener("click", function () {
-  openSite("https://github.com/MuffinGroup");
-});
-
-ytButton.addEventListener("click", function () {
-  openSite("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-});
-
-dcButton.addEventListener("click", function () {
-  openSite("https://discord.gg/XGvWxtgaaB");
-});
-
-contactButton.addEventListener("click", function () {
-  scrollToSection(document.getElementById("contact"));
-  openSite("https://github.com/MuffinGroup/yet-to-be-named-game");
-});
+const ytbng_git = document.getElementById("ytbng_git");
+const muffin_site_git = document.getElementById("ms_git");
+const factorization_git = document.getElementById("fac_git");
 
 ytbng_git.addEventListener("click", function () {
   openSite("https://github.com/MuffinGroup/yet-to-be-named-game");
@@ -58,10 +36,11 @@ function convertMarkdownToHTML(markdown) {
 
 // Function to load and convert the Markdown file
 function loadAndConvertMarkdownFile() {
+  console.log("conversion");
   var filePath = "posts/nexus-announcement.md"; // Set the file path here
   var xhr = new XMLHttpRequest();
 
-  xhr.onload = function () {
+  xhr.onload = () => {
     if (xhr.status === 200) {
       var markdownContent = xhr.responseText;
       var htmlOutput = convertMarkdownToHTML(markdownContent);
@@ -72,3 +51,13 @@ function loadAndConvertMarkdownFile() {
   xhr.open("GET", filePath, true);
   xhr.send();
 }
+
+console.log("init");
+window.addEventListener("scroll", function () {
+  var header = document.querySelector(".sticky-header");
+  if (window.scrollY > 150) {
+    header.classList.add("transparent");
+  } else {
+    header.classList.remove("transparent");
+  }
+});

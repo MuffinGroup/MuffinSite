@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut</title>
+    <style>
+        ::selection {
+            background: #505050;
+        }
+
+        ::-moz-selection {
+            background: #505050;
+        }
+
+        html,
+        body,
+        .container {
+            overflow: hidden;
+            background-color: black;
+            height: 100%;
+        }
+
+        .container {
+            color: white;
+            display: -webkit-flexbox;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky-header">   <!-- makes the navbar sticky -->
+        <nav class="navbar">
+      
+            <div class="navdiv">
+                <div class="navlogo"><a>Muffin Group</a></div>
+                <ul>
+                    <li class="navitem"><a href="../index.html">Home</a></li>
+                    <li class="navitem"><a href="about.html">About</a></li>
+                    <li class="navitem"><a href="https://github.com/MuffinGroup">Github</a></li>
+                </ul>
+            </div>
+        </nav>
+      </header> 
+    <div class="container">
+        <pre class="center" id="d"></pre>
+    </div>
+    <script src="donut.js"></script>
+</body>
+
+</html>

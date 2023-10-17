@@ -6,31 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muffin Group</title>
-    <link rel="icon" href="assets/icon.png" type="image/x-icon" />
+    <link rel="icon" href="assets/icon_new.png" type="image/x-icon" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
   </head>
+
+  <body>
+    <header class="sticky-header">   <!-- makes the navbar sticky -->
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="navlogo"><a>Muffin Group</a></div>
+            <ul>
+                <li class="navitem"><a href="donut/donut.html">Donut</a></li>
+                <li class="navitem"><a href="index.html">Home</a></li>
+                <li class="navitem"><a href="about.html">About</a></li>
+                <li class="navitem"><a href="https://github.com/MuffinGroup">Github</a></li>
+            </ul>
+        </div>
+    </nav>
+  </header>
+ </body>
   <body>
     <div class="page-container">
       <div class="content">
         <img class="background" src="assets/IMG_3976.jpeg" />
         <div class="head">
-          <button
-            class="logo-button"
-            onclick="window.location.href = 'index.html'"
-          >
-            <img class="logo" src="assets/muffin_icon.png" />
-          </button>
+           
+          <img class="logo" src="assets/logo_new.png" />
 
-          <div>
-            <a class="link button" href="licenses.html">Licenses</a>
-            <a class="link button" href="#contact">Contact</a>
-          </div>
         </div>
 
         <h1 class="headline">Muffin Group</h1>
@@ -73,10 +80,10 @@
               You can find all of our projects on github. We develop fully
               open-source because we value transparency and the community. Feel
               free to contribute by making a
-              <a href="https://github.com/MuffinGroup/factorization-rs/issues"
+              <a href="https://github.com/MuffinGroup/nexus/issues"
                 >suggestion/bug-report </a
               >or help devlopment directly by creating a
-              <a href="https://github.com/MuffinGroup/factorization-rs/pulls"
+              <a href="https://github.com/MuffinGroup/nexus/pulls"
                 >pull request</a
               >
             </div>
@@ -87,7 +94,7 @@
               id="ytbng_git"
               onclick="window.location.href = 'https://github.com/MuffinGroup/yet-to-be-named-game'"
             >
-              <img class="ytbng_git_button" src="assets/ytbng-git.png" />
+              <img class="ytbng_git_button" src="assets/project_buttons/ytbng-git.png" />
             </button>
             <button
               id="ms_git"
@@ -95,7 +102,7 @@
             >
               <img
                 class="muffin_site_git_button"
-                src="assets\muffin-site-git.png"
+                src="assets\project_buttons/muffin-site-git.png"
               />
             </button>
             <button
@@ -104,29 +111,18 @@
             >
               <img
                 class="factorization_git_button"
-                src="assets\factorization-git.png"
+                src="assets\project_buttons/factorization-git.png"
               />
             </button>
             <button
               id="nex_git"
               onclick="window.location.href = 'https://github.com/MuffinGroup/Nexus'"
             >
-              <img class="nexus_git_button" src="assets\nexus-git.png" />
+              <img class="nexus_git_button" src="assets\project_buttons/nexus-git.png" />
             </button>
           </div>
         </div>
       </div>
-      <footer class="footer">
-        <p class="footer-copy">&copy; 2023 MuffinGroup. MIT License.</p>
-        <div class="footer-contact">
-          <a href="about.html">about</a>
-          <br />
-          <a href="#contact">contact</a>
-        </div>
-        <div class="footer-help">
-          <a href="https://github.com/orgs/MuffinGroup/discussions">help</a>
-        </div>
-      </footer>
     </div>
     <script src="script.js"></script>
   </body>
